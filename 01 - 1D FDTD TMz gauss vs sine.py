@@ -5,19 +5,10 @@ Created on Wed Aug 22 01:06:30 2018
 @author: Dionisio
 TMz Basico Gaussian pulse
 """
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 21 20:10:45 2018
 
-@author: Cliente
-
-FDTD 1D EX HY
-TMx
-"""
-#import numpy as np
 from matplotlib import pyplot as plt
 from math import exp,sin,pi
-#import create_gif 
+
 
 ez = []
 hy = []
@@ -64,5 +55,5 @@ for n in range(0,nt):
     for i in range(0,nx-1):
         hy[i] =  hy[i] + 0.5*(ez[i] - ez[i+1])
     
-#    create_gif()
+
     
